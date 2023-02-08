@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Leon</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/0ed0a6b0bf.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="images/logo.png" class="logo" />
+          <ul id="sidemenu"> 
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <i class=" fas fa-solid fa-xmark" onclick="closemenu()"></i>
+          </ul>
+          <i class=" fas fa-solid fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+          <p>WEB Developer</p>
+          <h1>
+            Hi, I'm<span style="color: red"> Leon </span><br />
+            Laborina from MSB Org.
+          </h1>
+        </div>
+      </div>
+    </div>
+    <!-- about -->
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/lei.jpg" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Leon Laborina a hardworking student, developer, and 3D
+              designer. I love to create things with my hands and have been
+              doing it for as long as I can remember. My dream is to become a
+              software engineer and work on the latest technology in the field
+              of computer graphics.
+            </p>
+
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+
+              <p class="tab-links" onclick="opentab ('education')">Education</p>
+              <p class="tab-links" onclick="opentab('experience')">
+                Experience
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li><span>UI/UX</span><br />Designing Web/App Interfaces</li>
+                <li><span>Web Development</span><br />Web App Development</li>
+                <li><span>App Developer</span><br />Building Shtty Apps</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li>
+                  <span> 2020-2021 </span><br />Mayapyap National High School
+                </li>
+                <li>
+                  <span> 2015-2016</span><br />Valdefuente Cabanatuan City
+                </li>
+                <li>
+                  <span> Upcoming..</span><br />Central Luzon State University
+                </li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="experience">
+              <ul>
+                <li><span> 2022 December</span><br />Training Bootcamp</li>
+                <li><span> 2023 January</span><br />Sideline Job</li>
+                <li><span> 2023 February</span><br />Msb Corporation</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div id="services">
+      <div class="container">
+        <h1 class="sub-title">My Service</h1>
+        <div class="services-list">
+          <div>
+            <i class="fa-solid fa-code"></i>
+            <h2>Web Design</h2>
+            <p>
+              I am a web developer with a passion for creating beautiful,
+              functional websites. I have been working in the industry for over
+              three years and have developed websites for small businesses,
+              startups, and large corporations. I am always looking for
+              opportunities to grow my skillset and learn new things.
+            </p>
+            <a href="">learn more</a>
+          </div>
+
+          <div>
+            <i class="fa-solid fa-crop"></i>
+            <h2>UI/UX Design</h2>
+            <p>
+              I am a UI/UX Designer with a passion for making technology more
+              inclusive, enjoyable, and sustainable through user research.
+              Working in an array of different industries has given me the
+              unique opportunity to serve diverse customer bases, from parents
+              to undergraduate students to corporate leaders, and beyond.
+            </p>
+            <a href="">learn more</a>
+          </div>
+          <div>
+            <i class="fa-brands fa-app-store"></i>
+            <h2>App Design</h2>
+            <p>
+              I am a professional Web Application and Mobile Application
+              Developer. I have been developing Websites and Mobile Applications. I am flexible with my working hours and am
+              happy to work closely with any existing freelancers you work with.
+            </p>
+            <a href="">learn more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/leon1.jpg" />
+            <div class="layer">
+              <h3>Social Media App</h3>
+              <p>I'll create a fcking app that will allow you to remember the pass</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/leon2.jpg" />
+            <div class="layer">
+              <h3>Music App</h3>
+              <p>Music app para sa mga mayat maya videoke</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/leon1.jpg" />
+            <div class="layer">
+              <h3>Shopping App</h3>
+              <p>Para naman to sa adik sa shoppe</p>
+              <a href="#"
+                ><i class="fa-solid fa-arrow-up-right-from-square"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <a href="#" class="btn">See more</a>
+      </div>
+    </div>
+
+<div id="contact">
+  <div class="container">
+    <div class="row">
+      <div class="contact-left">
+        <h1 class="sub-title">Contact Me</h1>
+        <p><i class="fa-solid fa-paper-plane"></i> leonlaborina580@gmail.com</p>
+        <p><i class="fa-solid fa-square-phone"></i> 09097590315</p>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/profile.php?id=100084201083374"><i class="fa-brands fa-facebook"></i></a>
+          <a href=""><i class="fa-brands fa-twitter-square"></i></a>
+          <a href="https://www.instagram.com/ln.lbrn/"><i class="fa-brands fa-instagram"></i></a>
+          <a href=""><i class="fa-brands fa-linkedin"></i></a>
+        </div>
+        <a href="pr.pdf" download class="btn btn2">Download </a>
+
+      </div>
+      <div class="contact-right">
+        <form>
+          <input type="text" name="Name" placeholder="Your Name" required>
+          <input type="email" name="email" placeholder="Your Email" required>
+          <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+          <button type="submit" class="btn btn2">Submit</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p> Copyright &#169; Leon Laborina Website <i class="fa-sharp fa-solid fa-heart"></i> </p>
+  </div>
+</div>
+
+
+    <script>
+      let tablinks = document.getElementsByClassName("tab-links");
+      let tabcontents = document.getElementsByClassName("tab-contents");
+
+      // the funtion
+      function opentab(tabname) {
+        // to remove the red underline
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        //   to remove the contents of the tab
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        //   to add the 'active-link'(red underline) class to what ever is targeted
+        event.currentTarget.classList.add("active-link");
+        //   to add the 'active tab' class to whatever is selected
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+
+
+    <script>
+      
+var sidemeu = document.getElementById("sidemenu");
+
+function openmenu(){
+  sidemeu.style.right = "0";
+}
+function closemenu(){
+  sidemeu.style.right = "-200px";
+}
+
+
+    </script>
+  </body>
+</html>
